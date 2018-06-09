@@ -1,3 +1,4 @@
+// Copyright (c) 2018, The Koson Project
 // Copyright (c) 2017, SUMOKOIN
 // Copyright (c) 2014-2017, The Monero Project
 // 
@@ -84,8 +85,8 @@ using namespace cryptonote;
 // arbitrary, used to generate different hashes from the same input
 #define CHACHA8_KEY_TAIL 0x8c
 
-#define UNSIGNED_TX_PREFIX "Sumokoin unsigned tx set\002"
-#define SIGNED_TX_PREFIX "Sumokoin signed tx set\002"
+#define UNSIGNED_TX_PREFIX "Koson unsigned tx set\002"
+#define SIGNED_TX_PREFIX "Koson signed tx set\002"
 
 #define RECENT_OUTPUT_RATIO (0.5) // 50% of outputs are from the recent zone
 #define RECENT_OUTPUT_ZONE  ((time_t)(1.8 * 86400)) // last 1.8 day makes up the recent zone (taken from monerolink.pdf, Miller et al)
@@ -3229,18 +3230,18 @@ std::vector<std::vector<cryptonote::tx_destination_entry>> split_amounts(
 } // anonymous namespace
 
 /**
- * @brief gets a sumokoin address from the TXT record of a DNS entry
+ * @brief gets a koson address from the TXT record of a DNS entry
  *
- * gets the sumokoin address from the TXT record of the DNS entry associated
+ * gets the koson address from the TXT record of the DNS entry associated
  * with <url>.  If this lookup fails, or the TXT record does not contain an
- * SUMO address in the correct format, returns an empty string.  <dnssec_valid>
+ * aksn address in the correct format, returns an empty string.  <dnssec_valid>
  * will be set true or false according to whether or not the DNS query passes
  * DNSSEC validation.
  *
  * @param url the url to look up
  * @param dnssec_valid return-by-reference for DNSSEC status of query
  *
- * @return a sumokoin address (as a string) or an empty string
+ * @return a koson address (as a string) or an empty string
  */
 std::vector<std::string> wallet2::addresses_from_url(const std::string& url, bool& dnssec_valid)
 {
@@ -3257,7 +3258,7 @@ std::vector<std::string> wallet2::addresses_from_url(const std::string& url, boo
   }
   else dnssec_valid = false;
 
-  // for each txt record, try to find a sumokoin address in it.
+  // for each txt record, try to find a koson address in it.
   for (auto& rec : records)
   {
     std::string addr = address_from_txt_record(rec);
@@ -3274,8 +3275,8 @@ std::vector<std::string> wallet2::addresses_from_url(const std::string& url, boo
 // TODO: parse the string in a less stupid way, probably with regex
 std::string wallet2::address_from_txt_record(const std::string& s)
 {
-  // make sure the txt record has "oa1:sumo" and find it
-  auto pos = s.find("oa1:sumo");
+  // make sure the txt record has "oa1:aksn" and find it
+  auto pos = s.find("oa1:aksn");
 
   // search from there to find "recipient_address="
   pos = s.find("recipient_address=", pos);
@@ -5404,7 +5405,7 @@ std::string wallet2::make_uri(const std::string &address, const std::string &pay
     }
   }
 
-  std::string uri = "sumokoin:" + address;
+  std::string uri = "koson:" + address;
   unsigned int n_fields = 0;
 
   if (!payment_id.empty())
@@ -5433,9 +5434,9 @@ std::string wallet2::make_uri(const std::string &address, const std::string &pay
 //----------------------------------------------------------------------------------------------------
 bool wallet2::parse_uri(const std::string &uri, std::string &address, std::string &payment_id, uint64_t &amount, std::string &tx_description, std::string &recipient_name, std::vector<std::string> &unknown_parameters, std::string &error)
 {
-  if (uri.substr(0, 7) != "sumokoin:")
+  if (uri.substr(0, 7) != "koson:")
   {
-    error = std::string("URI has wrong scheme (expected \"sumokoin:\"): ") + uri;
+    error = std::string("URI has wrong scheme (expected \"koson:\"): ") + uri;
     return false;
   }
 

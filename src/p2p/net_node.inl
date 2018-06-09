@@ -1,3 +1,5 @@
+// Copyright (c) 2018, The Koson Project
+// Copyright (c) 2017, SUMOKOIN
 // Copyright (c) 2014-2016, The Monero Project
 //
 // All rights reserved.
@@ -98,7 +100,7 @@ namespace nodetool
     const command_line::arg_descriptor<int64_t> arg_limit_rate_down = {"limit-rate-down", "set limit-rate-down [kB/s]", -1};
     const command_line::arg_descriptor<int64_t> arg_limit_rate = {"limit-rate", "set limit-rate [kB/s]", -1};
 
-    const command_line::arg_descriptor<bool> arg_save_graph = {"save-graph", "Save data for dr sumokoin", false};
+    const command_line::arg_descriptor<bool> arg_save_graph = {"save-graph", "Save data for dr koson", false};
   }
   //-----------------------------------------------------------------------------------
   template<class t_payload_net_handler>

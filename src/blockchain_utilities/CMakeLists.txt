@@ -1,3 +1,5 @@
+# Copyright (c) 2018, The Koson Project
+# Copyright (c) 2017, SUMOKOIN
 # Copyright (c) 2014-2016, The Monero Project
 #
 # All rights reserved.
@@ -87,7 +89,7 @@ add_dependencies(blockchain_import
 	version)
 set_property(TARGET blockchain_import
 	PROPERTY
-	OUTPUT_NAME "sumo-blockchain-import")
+	OUTPUT_NAME "koson-blockchain-import")
 
 sumokoin_add_executable(blockchain_export
   ${blockchain_export_sources}
@@ -108,7 +110,7 @@ add_dependencies(blockchain_export
 	version)
 set_property(TARGET blockchain_export
 	PROPERTY
-	OUTPUT_NAME "sumo-blockchain-export")
+	OUTPUT_NAME "koson-blockchain-export")
 
 sumokoin_add_executable(cn_deserialize
   ${cn_deserialize_sources}
@@ -124,5 +126,5 @@ add_dependencies(cn_deserialize
 	version)
 set_property(TARGET cn_deserialize
 	PROPERTY
-	OUTPUT_NAME "sumo-utils-deserialize")
+	OUTPUT_NAME "koson-utils-deserialize")
 

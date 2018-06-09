@@ -1,3 +1,7 @@
+// Copyright (c) 2018, The Koson Project
+// Koson Block Reward Emission
+//------------------------------------
+// Copyright (c) 2017, SUMOKOIN
 // Sumokoin Block Reward Emission
 // Short URL: http://cpp.sh/6eeyr
 

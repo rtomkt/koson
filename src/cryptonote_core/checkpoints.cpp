@@ -1,3 +1,4 @@
+// Copyright (c) 2018, The Koson Project
 // Copyright (c) 2017, SUMOKOIN
 // Copyright (c) 2014-2016, The Monero Project
 //
@@ -209,20 +210,20 @@ namespace cryptonote
 
   bool checkpoints::load_checkpoints_from_dns(bool testnet)
   {
-    // All SumoPulse domains have DNSSEC on and valid
+    // All KosonPulse domains have DNSSEC on and valid
     static const std::vector<std::string> dns_urls = 
     {
-	"checkpoints.sumopulse.stream"
-	, "checkpoints.sumopulse.download"
-	, "checkpoints.sumopulse.win"
-	, "checkpoints.sumopulse.bid"
+	"checkpoints.kosonpulse.stream"
+	, "checkpoints.kosonpulse.download"
+	, "checkpoints.kosonpulse.win"
+	, "checkpoints.kosonpulse.bid"
     };
 
     static const std::vector<std::string> testnet_dns_urls = { 
-	"testpoints.sumopulse.stream"
-	, "testpoints.sumopulse.download"
-	, "testpoints.sumopulse.win"
-	, "testpoints.sumopulse.bid"
+	"testpoints.kosonpulse.stream"
+	, "testpoints.kosonpulse.download"
+	, "testpoints.kosonpulse.win"
+	, "testpoints.kosonpulse.bid"
     };
 
     std::vector<std::vector<std::string> > records;
@@ -279,7 +280,7 @@ namespace cryptonote
 
     if (num_valid_records < 2)
     {
-      LOG_PRINT_L0("WARNING: no two valid SumoPulse DNS checkpoint records were received");
+      LOG_PRINT_L0("WARNING: no two valid KosonPulse DNS checkpoint records were received");
       return true;
     }
 
@@ -301,7 +302,7 @@ namespace cryptonote
 
     if (good_records_index < 0)
     {
-      LOG_PRINT_L0("WARNING: no two SumoPulse DNS checkpoint records matched");
+      LOG_PRINT_L0("WARNING: no two KosonPulse DNS checkpoint records matched");
       return true;
     }
 

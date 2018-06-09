@@ -1,3 +1,5 @@
+# Copyright (c) 2018, The Koson Project
+# Copyright (c) 2017, SUMOKOIN
 # Copyright (c) 2014-2017, The Monero Project
 #
 # All rights reserved.
@@ -104,5 +106,5 @@ target_link_libraries(daemon
 add_dependencies(daemon version)
 set_property(TARGET daemon
   PROPERTY
-    OUTPUT_NAME "sumokoind")
+    OUTPUT_NAME "kosond")
 install(TARGETS daemon DESTINATION bin)

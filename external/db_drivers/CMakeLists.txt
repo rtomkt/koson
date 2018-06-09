@@ -1,3 +1,5 @@
+# Copyright (c) 2018, The Koson Project
+# Copyright (c) 2017, SUMOKOIN
 # Copyright (c) 2014-2016, The Monero Project
 # 
 # All rights reserved.

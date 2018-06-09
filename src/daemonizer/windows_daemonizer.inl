@@ -1,3 +1,5 @@
+// Copyright (c) 2018, The Koson Project
+// Copyright (c) 2017, SUMOKOIN
 // Copyright (c) 2014-2016, The Monero Project
 // 
 // All rights reserved.
@@ -175,7 +177,7 @@ namespace daemonizer
     }
     else // interactive
     {
-      //LOG_PRINT_L0("Sumokoin '" << SUMOKOIN_RELEASE_NAME << "' (v" << SUMOKOIN_VERSION_FULL);
+      //LOG_PRINT_L0("Koson '" << SUMOKOIN_RELEASE_NAME << "' (v" << SUMOKOIN_VERSION_FULL);
       return executor.run_interactive(vm);
     }
 

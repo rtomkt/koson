@@ -37,14 +37,14 @@ RUN apt-get update && \
 COPY --from=builder /src/build/release/bin/* /usr/local/bin/
 
 # Contains the blockchain
-VOLUME /root/.sumokoin
+VOLUME /root/.koson
 
 # Generate your wallet via accessing the container and run:
 # cd /wallet
-# sumo-wallet-cli
+# koson-wallet-cli
 VOLUME /wallet
 
 EXPOSE 15301
 EXPOSE 15302
 
-ENTRYPOINT ["sumokoind", "--p2p-bind-ip=0.0.0.0", "--p2p-bind-port=15301", "--rpc-bind-ip=0.0.0.0", "--rpc-bind-port=15302", "--non-interactive"]
+ENTRYPOINT ["kosond", "--p2p-bind-ip=0.0.0.0", "--p2p-bind-port=15301", "--rpc-bind-ip=0.0.0.0", "--rpc-bind-port=15302", "--non-interactive"]

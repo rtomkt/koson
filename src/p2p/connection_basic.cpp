@@ -2,6 +2,8 @@
 /// @author rfree (current maintainer in monero.cc project)
 /// @brief base for connection, contains e.g. the ratelimit hooks
 
+// Copyright (c) 2018, The Koson Project
+// Copyright (c) 2017, SUMOKOIN
 // Copyright (c) 2014-2016, The Monero Project
 // 
 // All rights reserved.
@@ -163,7 +165,7 @@ connection_basic::connection_basic(boost::asio::io_service& io_service, std::ato
 	try { boost::system::error_code e; remote_addr_str = socket_.remote_endpoint(e).address().to_string(); } catch(...){} ;
 
 	_note("Spawned connection p2p#"<<mI->m_peer_number<<" to " << remote_addr_str << " currently we have sockets count:" << m_ref_sock_count);
-	//boost::filesystem::create_directories("log/dr-sumokoin/net/");
+	//boost::filesystem::create_directories("log/dr-koson/net/");
 }
 
 connection_basic::~connection_basic() noexcept(false) {

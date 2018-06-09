@@ -1,3 +1,4 @@
+// Copyright (c) 2018, The Koson Project
 // Copyright (c) 2017, SUMOKOIN
 //
 // All rights reserved.

@@ -1,3 +1,5 @@
+// Copyright (c) 2018, The Koson Project
+// Copyright (c) 2017, SUMOKOIN
 // Copyright (c) 2014-2017, The Monero Project
 //
 // All rights reserved.
@@ -335,8 +337,8 @@ namespace dns_utils
   // TODO: parse the string in a less stupid way, probably with regex
   std::string address_from_txt_record(const std::string& s)
   {
-    // make sure the txt record has "oa1:sumo" and find it
-    auto pos = s.find("oa1:sumo");
+    // make sure the txt record has "oa1:aksn" and find it
+    auto pos = s.find("oa1:aksn");
     if (pos == std::string::npos)
       return{};
     // search from there to find "recipient_address="
@@ -361,11 +363,11 @@ namespace dns_utils
     return{};
   }
   /**
-  * @brief gets a sumokoin address from the TXT record of a DNS entry
+  * @brief gets a koson address from the TXT record of a DNS entry
   *
   * gets the monero address from the TXT record of the DNS entry associated
   * with <url>.  If this lookup fails, or the TXT record does not contain an
-  * SUMO address in the correct format, returns an empty string.  <dnssec_valid>
+  * aksn address in the correct format, returns an empty string.  <dnssec_valid>
   * will be set true or false according to whether or not the DNS query passes
   * DNSSEC validation.
   *
@@ -413,7 +415,7 @@ namespace dns_utils
     // for now, move on only if one address found
     if (addresses.size() > 1)
     {
-      LOG_ERROR("not yet supported: Multiple Sumokoin addresses found for given URL: " << url);
+      LOG_ERROR("not yet supported: Multiple Koson addresses found for given URL: " << url);
       return{};
     }
     if (!cli_confirm)
@@ -524,7 +526,7 @@ namespace dns_utils
 
     if (num_valid_records < 2)
     {
-      LOG_PRINT_L0("WARNING: no two valid Sumokoin DNS checkpoint records were received");
+      LOG_PRINT_L0("WARNING: no two valid Koson DNS checkpoint records were received");
       return false;
     }
 
@@ -546,7 +548,7 @@ namespace dns_utils
 
     if (good_records_index < 0)
     {
-      LOG_PRINT_L0("WARNING: no two Sumokoin DNS checkpoint records matched");
+      LOG_PRINT_L0("WARNING: no two Koson DNS checkpoint records matched");
       return false;
     }
 

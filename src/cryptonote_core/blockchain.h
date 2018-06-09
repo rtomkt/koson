@@ -1,3 +1,5 @@
+// Copyright (c) 2018, The Koson Project
+// Copyright (c) 2017, SUMOKOIN
 // Copyright (c) 2014-2016, The Monero Project
 //
 // All rights reserved.
@@ -1257,7 +1259,7 @@ namespace cryptonote
      * @brief loads block hashes from compiled-in data set
      *
      * A (possibly empty) set of block hashes can be compiled into the
-     * sumokoin daemon binary.  This function loads those hashes into
+     * koson daemon binary.  This function loads those hashes into
      * a useful state.
      */
     void load_compiled_in_block_hashes();

@@ -1,3 +1,5 @@
+# Copyright (c) 2018, The Koson Project
+# Copyright (c) 2017, SUMOKOIN
 # Copyright (c) 2014-2017, The Monero Project
 #
 # All rights reserved.
@@ -30,7 +32,7 @@
 
 cmake_minimum_required(VERSION 2.8.7)
 
-project(sumokoin)
+project(koson)
 
 function (die msg)
   if (NOT WIN32)

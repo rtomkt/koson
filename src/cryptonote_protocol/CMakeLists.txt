@@ -1,3 +1,5 @@
+# Copyright (c) 2018, The Koson Project
+# Copyright (c) 2017, SUMOKOIN
 # Copyright (c) 2014-2016, The Monero Project
 #
 # All rights reserved.
@@ -27,7 +29,7 @@
 # THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 cmake_minimum_required (VERSION 2.6)
-project (sumokoin CXX)
+project (koson CXX)
 
 file(GLOB CRYPTONOTE_PROTOCOL *)
 source_group(cryptonote_protocol FILES ${CRYPTONOTE_PROTOCOL})

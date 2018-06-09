@@ -1,3 +1,5 @@
+// Copyright (c) 2018, The Koson Project
+// Copyright (c) 2017, SUMOKOIN
 // Copyright (c) 2014-2016, The Monero Project
 //
 // All rights reserved.
@@ -124,10 +126,10 @@ namespace nodetool
     virtual std::map<uint32_t, time_t> get_blocked_ips() { CRITICAL_REGION_LOCAL(m_blocked_ips_lock); return m_blocked_ips; }
   private:
     const std::vector<std::string> m_seed_nodes_list =
-    { "seeds.sumoseeds.bid"
-    , "seeds.sumoseeds.win"
-    , "seeds.sumoseeds2.bid"
-    , "seeds.sumoseeds2.win"
+    { "seeds.kosonseeds.bid"
+    , "seeds.kosonseeds.win"
+    , "seeds.kosonseeds2.bid"
+    , "seeds.kosonseeds2.win"
     };
 
     bool islimitup=false;

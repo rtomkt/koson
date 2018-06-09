@@ -1,4 +1,6 @@
-# Sumokoin
+# The Koson Project
+
+Copyright (c) 2018, The Koson Project - www.comingsoon.com
 
 Copyright (c) 2017, Sumokoin.org
 
@@ -8,45 +10,37 @@ Portions Copyright (c) 2012-2013, The Cryptonote developers
 
 ## Development Resources
 
-- Web: [www.sumokoin.org](https://www.sumokoin.org)
-- Mail: [contact@sumokoin.org](mailto:contact@sumokoin.org)
+- Web: [www.comingsoon.com](https://www.comingsoon.com)
+- Mail: [contact@comingsoon.com](mailto:contact@comingsoon.com)
 
-Please note that code is developed on the [dev branch](https://github.com/sumoprojects/sumokoin/tree/dev), if you want to check out the latest updates, before they are merged on main branch, please refer there. Master branch will always point to a version that we consider stable, so you can download the code by simply typing `git clone https://github.com/sumoprojects/sumokoin.git`
+Please note that code is developed on the [dev branch](https://github.com/kosonproject/koson/tree/dev), if you want to check out the latest updates, before they are merged on main branch, please refer there. Master branch will always point to a version that we consider stable, so you can download the code by simply typing `git clone https://github.com/kosonproject/koson.git`
 
 ## Introduction
 
-Sumokoin (スモコイン in Japanese) is a fork from Monero, one of the most respectable cryptocurrency well-known for **security, privacy, untraceability** and **active development**. Starting as an educational project, we found that it would be great to create a new coin with high level of privacy by (1) moving forward right away to **Ring Confidential Transactions (RingCT)**, (2) setting **minimum transaction _mixin_ to 12** that would greatly reduce chance of being attacked, traced or identified by (blockchain) statistical analysis.
+Koson is a fork from Monero, one of the most respectable cryptocurrency well-known for **security, privacy, untraceability** and **active development**. Starting as an educational project, we found that it would be great to create a new coin with high level of privacy by (1) moving forward right away to **Ring Confidential Transactions (RingCT)**, (2) setting **minimum transaction _mixin_ to 12** that would greatly reduce chance of being attacked, traced or identified by (blockchain) statistical analysis.
 
-Sumokoin, therefore, is a new Monero without its legacy, a _truely fungible_ cryptocurrency among just a few ones in the market.
+Koson, therefore, is a new Monero without its legacy, a _truely fungible_ cryptocurrency among just a few ones in the market.
 
 ## Coin Supply & Emission
 
-- **Total supply**: **88,888,888** coins in first 20 years, then **263,000** coins each year for inflation. 
-About 10% (~8.8 million) was premined to reserve for future development, i.e. **80 million coins available** for community mining.
-- **Coin symbol**: **SUMO**
+- **Total supply**: **100,000,000** coins.
+- **Premine**: **4%** (**2%** for developers and **2%** for future **development and marketing**, i.e. **96 million coins available** for the mining community).
+- **Coin symbol**: **KSN**
 - **Coin Units**:
-  + 1 Sumoshi &nbsp;= 0.000000001 **SUMO** (10<sup>-9</sup> - _the smallest coin unit_)
-  + 1 Sumokun = 0.000001 **SUMO** (10<sup>-6</sup>)
-  + 1 Sumosan = 0.001 **SUMO** (10<sup>-3</sup>)
+  + 1 Nano-koson &nbsp;= 0.000000001 **KSN** (10<sup>-9</sup> - _the smallest coin unit_)
+  + 1 Micro-koson = 0.000001 **KSN** (10<sup>-6</sup>)
+  + 1 Mili-koson = 0.001 **KSN** (10<sup>-3</sup>)
+  + 1 Koson = 1 **KSN**
 - **Hash algorithm**: CryptoNight (Proof-Of-Work)
-- **Emission scheme**: Sumokoin's block reward changes _every 6-months_ as the following "Camel" distribution* (inspired by _real-world mining production_ like of crude oil, coal etc. that is often slow at first, 
-accelerated in the next few years before declined and depleted). However, the emission path of Sumokoin is generally not far apart from what of Bitcoin (view charts below).
-
-![](http://www.sumokoin.org/images/block_reward_by_calendar_year.png)
-
-![](http://www.sumokoin.org/images/block_reward_by_calendar_month.png)
-
-![](http://www.sumokoin.org/images/emission_speed_sumo_vs_btc.png)
-
-\* The emulated algorithm of Sumokoin block-reward emission can be found in Python and C++ scripts at [scripts](scripts) directory.
+- **Emission scheme**: Koson's block reward changes _every 6-months_ as the following "Camel" distribution* (inspired by _real-world mining production_ like of crude oil, coal etc. that is often slow at first, accelerated in the next few years before declined and depleted).
 
 ## About this Project
 
-This is the core implementation of Sumokoin. It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of Sumokoin that uses the protocol and network in a compatible manner.
+This is the core implementation of Koson. It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of Koson that uses the protocol and network in a compatible manner.
 
 As with many development projects, the repository on Github is considered to be the "staging" area for the latest changes. Before changes are merged into that branch on the main repository, they are tested by individual developers in their own branches, submitted as a pull request, and then subsequently tested by contributors who focus on testing and code reviews. That having been said, the repository should be carefully considered before using it in a production environment, unless there is a patch in the repository for a particular show-stopping issue you are experiencing. It is generally a better idea to use a tagged release for stability.
 
-**Anyone is welcome to contribute to Sumokoin's codebase!** If you have a fix or code change, feel free to submit is as a pull request directly to the "master" branch. In cases where the change is relatively small or does not affect other parts of the codebase it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
+**Anyone is welcome to contribute to Koson's codebase!** If you have a fix or code change, feel free to submit is as a pull request directly to the "master" branch. In cases where the change is relatively small or does not affect other parts of the codebase it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
 
 ## License
 
@@ -54,7 +48,7 @@ Please view [LICENSE](LICENSE)
 
 [![License](https://img.shields.io/badge/license-BSD3-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
-## Compiling Sumokoin from Source
+## Compiling Koson from Source
 
 ### Dependencies
 
@@ -90,7 +84,7 @@ build the library binary manually. This can be done with the following command `
 
 ### Build instructions
 
-Sumokoin uses the CMake build system and a top-level [Makefile](Makefile) that
+Koson uses the CMake build system and a top-level [Makefile](Makefile) that
 invokes cmake commands as needed.
 
 #### On Linux and OS X
@@ -103,7 +97,7 @@ invokes cmake commands as needed.
     
 * Change to the root of the source code directory and build:
 
-        cd sumokoin
+        cd koson
         make
 
     *Optional*: If your machine has several cores and enough memory, enable
@@ -113,9 +107,9 @@ invokes cmake commands as needed.
 
 * The resulting executables can be found in `build/release/bin`
 
-* Add `PATH="$PATH:$HOME/sumokoin/build/release/bin"` to `.profile`
+* Add `PATH="$PATH:$HOME/koson/build/release/bin"` to `.profile`
 
-* Run Sumokoin with `sumokoind --detach`
+* Run Koson with `kosond --detach`
 
 * **Optional**: build and run the test suite to verify the binaries:
 
@@ -141,7 +135,7 @@ Tested on a Raspberry Pi 2 with a clean install of minimal Debian Jessie from ht
 
 * `apt-get update && apt-get upgrade` to install all of the latest software
 
-* Install the dependencies for Sumokoin except libunwind and libboost-all-dev
+* Install the dependencies for Koson except libunwind and libboost-all-dev
 
 * Increase the system swap size:
 ```	
@@ -167,16 +161,16 @@ Tested on a Raspberry Pi 2 with a clean install of minimal Debian Jessie from ht
 
 * Change to the root of the source code directory and build:
 
-        cd sumokoin
+        cd koson
         make release
 
 * Wait ~4 hours
 
 * The resulting executables can be found in `build/release/bin`
 
-* Add `PATH="$PATH:$HOME/sumokoin/build/release/bin"` to `.profile`
+* Add `PATH="$PATH:$HOME/koson/build/release/bin"` to `.profile`
 
-* Run Sumokoin with `sumokoind --detach`
+* Run Koson with `kosond --detach`
 
 * You may wish to reduce the size of the swap file after the build has finished, and delete the boost directory from your home directory
 
@@ -239,7 +233,7 @@ application.
 
 * Clone source code, change to the root of the source code directory and build:
 
-        git clone https://github.com/sumoprojects/sumokoin; cd sumokoin; make release-static;
+        git clone https://github.com/kosonproject/koson; cd koson; make release-static;
 
 
 ### On OpenBSD:
@@ -253,7 +247,7 @@ The doxygen and graphviz packages are optional and require the xbase set.
 The Boost package has a bug that will prevent librpc.a from building correctly. In order to fix this, you will have to Build boost yourself from scratch. Follow the directions here (under "Building Boost"):
 https://github.com/bitcoin/bitcoin/blob/master/doc/build-openbsd.md
 
-You will have to add the serialization, date_time, and regex modules to Boost when building as they are needed by Sumokoin.
+You will have to add the serialization, date_time, and regex modules to Boost when building as they are needed by Koson.
 
 To build: `env CC=egcc CXX=eg++ CPP=ecpp DEVELOPER_LOCAL_TOOLS=1 BOOST_ROOT=/path/to/the/boost/you/built make release-static-64`
 
@@ -269,15 +263,15 @@ By default, in either dynamically or statically linked builds, binaries target t
 * ```make release-static-win64``` builds binaries on 64-bit Windows portable across 64-bit Windows systems
 * ```make release-static-win32``` builds binaries on 64-bit or 32-bit Windows portable across 32-bit Windows systems
 
-## Running sumokoind
+## Running kosond
 
 The build places the binary in `bin/` sub-directory within the build directory
 from which cmake was invoked (repository root by default). To run in
 foreground:
 
-    ./bin/sumokoind
+    ./bin/kosond
 
-To list all available options, run `./bin/sumokoind --help`.  Options can be
+To list all available options, run `./bin/kosond --help`.  Options can be
 specified either on the command line or in a configuration file passed by the
 `--config-file` argument.  To specify an option in the configuration file, add
 a line with the syntax `argumentname=value`, where `argumentname` is the name
@@ -285,17 +279,17 @@ of the argument without the leading dashes, for example `log-level=1`.
 
 To run in background:
 
-    ./bin/sumokoind --log-file sumokoind.log --detach
+    ./bin/kosond --log-file kosond.log --detach
 
 To run as a systemd service, copy
-[sumokoind.service](utils/systemd/sumokoind.service) to `/etc/systemd/system/` and
-[sumokoind.conf](utils/conf/sumokoind.conf) to `/etc/`. The [example
-service](utils/systemd/sumokoind.service) assumes that the user `sumokoin` exists
+[kosond.service](utils/systemd/kosond.service) to `/etc/systemd/system/` and
+[kosond.conf](utils/conf/kosond.conf) to `/etc/`. The [example
+service](utils/systemd/kosond.service) assumes that the user `koson` exists
 and its home is the data directory specified in the [example
-config](utils/conf/sumokoind.conf).
+config](utils/conf/kosond.conf).
 
 If you're on Mac, you may need to add the `--max-concurrency 1` option to
-sumo-wallet-cli, and possibly sumokoind, if you get crashes refreshing.
+koson-wallet-cli, and possibly kosond, if you get crashes refreshing.
 
 ## Internationalization
 
@@ -303,33 +297,33 @@ Please see [README.i18n](README.i18n)
 
 ## Using Tor
 
-While Sumokoin isn't made to integrate with Tor, it can be used wrapped with torsocks, if you add --p2p-bind-ip 127.0.0.1 to the sumokoind command line. You also want to set DNS requests to go over TCP, so they'll be routed through Tor, by setting DNS_PUBLIC=tcp. You may also disable IGD (UPnP port forwarding negotiation), which is pointless with Tor. To allow local connections from the wallet, you might have to add TORSOCKS_ALLOW_INBOUND=1, some OSes need it and some don't. Example:
+While Koson isn't made to integrate with Tor, it can be used wrapped with torsocks, if you add --p2p-bind-ip 127.0.0.1 to the kosond command line. You also want to set DNS requests to go over TCP, so they'll be routed through Tor, by setting DNS_PUBLIC=tcp. You may also disable IGD (UPnP port forwarding negotiation), which is pointless with Tor. To allow local connections from the wallet, you might have to add TORSOCKS_ALLOW_INBOUND=1, some OSes need it and some don't. Example:
 
-`DNS_PUBLIC=tcp torsocks sumokoind --p2p-bind-ip 127.0.0.1 --no-igd`
+`DNS_PUBLIC=tcp torsocks kosond --p2p-bind-ip 127.0.0.1 --no-igd`
 
 or:
 
-`DNS_PUBLIC=tcp TORSOCKS_ALLOW_INBOUND=1 torsocks sumokoind --p2p-bind-ip 127.0.0.1 --no-igd`
+`DNS_PUBLIC=tcp TORSOCKS_ALLOW_INBOUND=1 torsocks kosond --p2p-bind-ip 127.0.0.1 --no-igd`
 
 TAILS ships with a very restrictive set of firewall rules. Therefore, you need to add a rule to allow this connection too, in addition to telling torsocks to allow inbound connections. Full example:
 
 `sudo iptables -I OUTPUT 2 -p tcp -d 127.0.0.1 -m tcp --dport 18081 -j ACCEPT`
 
-`DNS_PUBLIC=tcp torsocks ./sumokoind --p2p-bind-ip 127.0.0.1 --no-igd --rpc-bind-ip 127.0.0.1 --data-dir /home/your/directory/to/the/blockchain`
+`DNS_PUBLIC=tcp torsocks ./kosond --p2p-bind-ip 127.0.0.1 --no-igd --rpc-bind-ip 127.0.0.1 --data-dir /home/your/directory/to/the/blockchain`
 
-`./sumo-wallet-cli`
+`./koson-wallet-cli`
 
 ## Using readline
 
-While `sumokoind` and `sumo-wallet-cli` do not use readline directly, most of the functionality can be obtained by running them via `rlwrap`. This allows command recall, edit capabilities, etc. It does not give autocompletion without an extra completion file, however. To use rlwrap, simply prepend `rlwrap` to the command line, eg:
+While `kosond` and `koson-wallet-cli` do not use readline directly, most of the functionality can be obtained by running them via `rlwrap`. This allows command recall, edit capabilities, etc. It does not give autocompletion without an extra completion file, however. To use rlwrap, simply prepend `rlwrap` to the command line, eg:
 
-`rlwrap bin/sumo-wallet-cli --wallet-file /path/to/wallet`
+`rlwrap bin/koson-wallet-cli --wallet-file /path/to/wallet`
 
 Note: rlwrap will save things like your seed and private keys, if you supply them on prompt. You may want to not use rlwrap when you use simplewallet to restore from seed, etc.
 
 # Debugging
 
-This section contains general instructions for debugging failed installs or problems encountered with Sumokoin. First ensure you are running the latest version built from the github repo.
+This section contains general instructions for debugging failed installs or problems encountered with Koson. First ensure you are running the latest version built from the github repo.
 
 ## LMDB
 
@@ -337,7 +331,7 @@ Instructions for debugging suspected blockchain corruption as per @HYC
 
 There is an `mdb_stat` command in the LMDB source that can print statistics about the database but it's not routinely built. This can be built with the following command:
 
-`cd ~/sumokoin/external/db_drivers/liblmdb && make`
+`cd ~/koson/external/db_drivers/liblmdb && make`
 
 The output of `mdb_stat -ea <path to blockchain dir>` will indicate inconsistencies in the blocks, block_heights and block_info table.
 

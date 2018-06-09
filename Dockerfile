@@ -44,7 +44,7 @@ VOLUME /root/.sumokoin
 # sumo-wallet-cli
 VOLUME /wallet
 
-EXPOSE 19733
-EXPOSE 19734
+EXPOSE 15301
+EXPOSE 15302
 
-ENTRYPOINT ["sumokoind", "--p2p-bind-ip=0.0.0.0", "--p2p-bind-port=19733", "--rpc-bind-ip=0.0.0.0", "--rpc-bind-port=19734", "--non-interactive"]
+ENTRYPOINT ["sumokoind", "--p2p-bind-ip=0.0.0.0", "--p2p-bind-port=15301", "--rpc-bind-ip=0.0.0.0", "--rpc-bind-port=15302", "--non-interactive"]

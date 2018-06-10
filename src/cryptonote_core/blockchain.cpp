@@ -2854,9 +2854,9 @@ bool Blockchain::check_block_timestamp(std::vector<uint64_t>& timestamps, const 
 bool Blockchain::check_block_timestamp(const block& b) const
 {
   LOG_PRINT_L3("Blockchain::" << __func__);
-//  uint64_t block_future_time_limit = get_current_hard_fork_version() < 2 ?
-//                                          CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT :
-//                                          CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT_V2;
+  uint64_t block_future_time_limit = get_current_hard_fork_version() < 2 ?
+                                          CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT :
+                                          CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT_V2;
 //  size_t blockchain_timestamp_check_window = get_current_hard_fork_version() < 2 ?
 //                                                  BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW :
 //                                                  BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW_V2;

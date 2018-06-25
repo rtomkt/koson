@@ -471,7 +471,7 @@ namespace nodetool
 
       if (!full_addrs.size())
       {
-        LOG_PRINT_L0("DNS seed node lookup either timed out or failed, falling back to defaults");
+        LOG_PRINT_L1("DNS seed node lookup either timed out or failed, falling back to defaults");
         full_addrs.insert("127.0.0.1:15301");
       }
     }

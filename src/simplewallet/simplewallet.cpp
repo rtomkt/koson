@@ -3089,7 +3089,7 @@ bool simple_wallet::check_tx_key(const std::vector<std::string> &args_)
       const txout_to_key tx_out_to_key = boost::get<txout_to_key>(tx.vout[n].target);
       crypto::public_key pubkey;
       derive_public_key(derivation, n, info.address.m_spend_public_key, pubkey);
-      if (pubkey == tx_out_to_key.key)
+      if (tx.version == 1 || tx.rct_signatures.type == rct::RCTTypeNull)
       {
         uint64_t amount;
         if (tx.version == 1)

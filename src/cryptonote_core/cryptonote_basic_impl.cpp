@@ -83,10 +83,8 @@ namespace cryptonote {
     uint64_t round_factor = 10000000; // 1 * pow(10, 7)
     if (height > 0)
     {
-      if (height < (PEAK_COIN_EMISSION_HEIGHT + COIN_EMISSION_HEIGHT_INTERVAL)) {
-        uint64_t interval_num = height / COIN_EMISSION_HEIGHT_INTERVAL;
-        double money_supply_pct = 0.1888 + interval_num*(0.023 + interval_num*0.0032);
-        base_reward = ((uint64_t)(MONEY_SUPPLY * money_supply_pct)) >> EMISSION_SPEED_FACTOR;
+      if (height == 1 {
+       base_reward = PREMINED_COINS;
       }
       else{
         base_reward = (MONEY_SUPPLY - already_generated_coins) >> EMISSION_SPEED_FACTOR;

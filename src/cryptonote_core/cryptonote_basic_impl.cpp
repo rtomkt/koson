@@ -83,7 +83,7 @@ namespace cryptonote {
     uint64_t round_factor = 10000000; // 1 * pow(10, 7)
     if (height > 0)
     {
-      if (height == 1 {
+      if (height == 1) {
        base_reward = PREMINED_COINS;
       }
       else{
